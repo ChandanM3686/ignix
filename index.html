@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IGenX | Loans, Debt Syndication & Corporate Advisory</title>
+  <meta name="description" content="IGenX helps businesses access the right capital — debt syndication, business loans and equity fund raising advisory, backed by 21 years of banking experience.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ ENQUIRY POPUP (opens on first visit) ============ -->
+  <input type="checkbox" id="close-popup" class="popup-toggle" hidden>
+  <div class="popup" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+    <label for="close-popup" class="popup-backdrop" aria-hidden="true"></label>
+    <div class="popup-card">
+      <label for="close-popup" class="popup-close" aria-label="Close">&times;</label>
+      <p class="eyebrow">Free consultation</p>
+      <h2 id="popup-title">Tell us what your business needs</h2>
+      <p class="popup-sub">Share a few details and we'll get back to you within one working day.</p>
+      <form class="enquiry-form" data-enquiry>
+        <div class="field-row">
+          <div class="field">
+            <label for="p-name">Full name</label>
+            <input id="p-name" name="name" type="text" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="p-phone">Mobile number</label>
+            <input id="p-phone" name="phone" type="tel" required pattern="[0-9+\s\-]{10,15}" autocomplete="tel">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="p-company">Company name</label>
+            <input id="p-company" name="company" type="text" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="p-city">City</label>
+            <input id="p-city" name="city" type="text" autocomplete="address-level2">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="p-service">Looking for</label>
+            <select id="p-service" name="service" required>
+              <option value="" disabled selected>Select one</option>
+              <option>Secured business loan</option>
+              <option>Unsecured business loan</option>
+              <option>Debt syndication</option>
+              <option>Equity / fund raising</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="p-amount">Approx. amount</label>
+            <select id="p-amount" name="amount">
+              <option value="" disabled selected>Select range</option>
+              <option>Up to ₹50 Lakh</option>
+              <option>₹50 Lakh – ₹2 Cr</option>
+              <option>₹2 Cr – ₹10 Cr</option>
+              <option>Above ₹10 Cr</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="p-msg">Anything else? <span>(optional)</span></label>
+          <textarea id="p-msg" name="message" rows="2"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send enquiry</button>
+        <p class="form-note">Your details are sent directly to our partner on WhatsApp.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">IGen<span>X</span></a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#advantage">Why IGenX</a>
+        <a href="#enquire" class="btn btn-small">Enquire</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Loans · Debt Syndication · Corporate Advisory</p>
+        <h1>The right capital,<br>at the right price,<br>through the right partner.</h1>
+        <p class="lead">We help growing businesses raise debt and equity from a wide network of banks, NBFCs and institutional investors — with structures built around how your business actually earns.</p>
+        <div class="hero-actions">
+          <a href="#enquire" class="btn btn-primary">Discuss your requirement</a>
+          <a href="#services" class="btn btn-ghost">What we offer</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <div class="stat">
+          <span class="stat-num">21</span>
+          <span class="stat-label">years in banking<br>with ICICI Bank</span>
+        </div>
+        <ul class="hero-list">
+          <li>Multiple banks &amp; NBFCs, one conversation</li>
+          <li>Secured and unsecured business loans</li>
+          <li>Equity &amp; growth capital advisory</li>
+          <li>Support from evaluation to disbursement</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div>
+        <p class="eyebrow">A new chapter</p>
+        <h2>21 years of banking experience. One vision.</h2>
+      </div>
+      <div class="about-text">
+        <p>After an enriching 21-year journey with <strong>ICICI Bank</strong>, I decided to embark on a new chapter — leveraging my professional experience, industry knowledge and extensive network to serve clients with greater flexibility, choice and personalised financial solutions.</p>
+        <p>I am delighted to be associated with <strong>IGenX as a Partner</strong>, with a clear focus on helping businesses access the right capital for their growth ambitions.</p>
+        <p class="signature">— Arnab Guhathakurta, Partner, IGenX</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">What we offer</p>
+        <h2>Two ways we help you fund growth</h2>
+      </div>
+      <div class="service-grid">
+        <article class="service">
+          <span class="service-num">01</span>
+          <h3>Debt Syndication</h3>
+          <ul>
+            <li>Secured and unsecured business loans</li>
+            <li>Access to multiple banks, NBFCs and lending institutions</li>
+            <li>Tailor-made financing structures to suit business requirements</li>
+          </ul>
+        </article>
+        <article class="service">
+          <span class="service-num">02</span>
+          <h3>Equity &amp; Fund Raising Advisory</h3>
+          <ul>
+            <li>Equity-led fund raising</li>
+            <li>Access to private equity investors, merchant bankers and other institutional funding partners</li>
+            <li>Growth capital for expansion and strategic business opportunities</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ADVANTAGE ============ -->
+  <section class="advantage" id="advantage">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">The IGenX advantage</p>
+        <h2>Your business. Your choice. Your financial partner.</h2>
+        <p class="section-sub">Through our network of leading financial institutions, we help you explore and compare:</p>
+      </div>
+      <div class="adv-grid">
+        <div class="adv">
+          <h4>Competitive pricing</h4>
+          <p>Choose from attractive lending options.</p>
+        </div>
+        <div class="adv">
+          <h4>Choice of lender</h4>
+          <p>Access a bouquet of banks and NBFCs.</p>
+        </div>
+        <div class="adv">
+          <h4>Flexible loan amounts</h4>
+          <p>Financing aligned with your requirements.</p>
+        </div>
+        <div class="adv">
+          <h4>Suitable tenure</h4>
+          <p>Repayment designed around your cash flows.</p>
+        </div>
+        <div class="adv">
+          <h4>Professional guidance</h4>
+          <p>Experienced support from evaluation to disbursement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PHILOSOPHY ============ -->
+  <section class="philosophy">
+    <div class="container">
+      <blockquote>
+        “We believe businesses should not be restricted by limited financing options. They deserve access to the right capital, at the right price, through the right partner. At IGenX, our endeavour is to make that possible.”
+      </blockquote>
+      <p class="philosophy-label">Our philosophy</p>
+    </div>
+  </section>
+
+  <!-- ============ ENQUIRY SECTION ============ -->
+  <section class="enquire" id="enquire">
+    <div class="container enquire-grid">
+      <div>
+        <p class="eyebrow">Get in touch</p>
+        <h2>Let's talk about your funding plans</h2>
+        <p>Whether you need working capital, a term loan or growth equity, a short conversation is the best place to start.</p>
+        <div class="contact-lines">
+          <a href="https://wa.me/919752097862" target="_blank" rel="noopener">WhatsApp: +91 97520 97862</a>
+          <a href="mailto:guhathakurtaarnab@gmail.com">guhathakurtaarnab@gmail.com</a>
+        </div>
+      </div>
+      <form class="enquiry-form card-form" data-enquiry>
+        <div class="field-row">
+          <div class="field">
+            <label for="s-name">Full name</label>
+            <input id="s-name" name="name" type="text" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="s-phone">Mobile number</label>
+            <input id="s-phone" name="phone" type="tel" required pattern="[0-9+\s\-]{10,15}" autocomplete="tel">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="s-company">Company name</label>
+            <input id="s-company" name="company" type="text">
+          </div>
+          <div class="field">
+            <label for="s-city">City</label>
+            <input id="s-city" name="city" type="text">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="s-service">Looking for</label>
+            <select id="s-service" name="service" required>
+              <option value="" disabled selected>Select one</option>
+              <option>Secured business loan</option>
+              <option>Unsecured business loan</option>
+              <option>Debt syndication</option>
+              <option>Equity / fund raising</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="s-amount">Approx. amount</label>
+            <select id="s-amount" name="amount">
+              <option value="" disabled selected>Select range</option>
+              <option>Up to ₹50 Lakh</option>
+              <option>₹50 Lakh – ₹2 Cr</option>
+              <option>₹2 Cr – ₹10 Cr</option>
+              <option>Above ₹10 Cr</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="s-msg">Message <span>(optional)</span></label>
+          <textarea id="s-msg" name="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send enquiry</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="#" class="logo logo-light">IGen<span>X</span></a>
+        <p>Loans · Debt Syndication · Corporate Advisory</p>
+      </div>
+      <div class="footer-contact">
+        <strong>Arnab Guhathakurta</strong>
+        <span>Partner, IGenX</span>
+        <a href="mailto:guhathakurtaarnab@gmail.com">guhathakurtaarnab@gmail.com</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 2026 IGenX. All rights reserved.</div>
+  </footer>
+
+  <!-- Sends form details to WhatsApp (static, works on GitHub Pages) -->
+  <script>
+    var WHATSAPP_NUMBER = "919752097862";
+    document.querySelectorAll("[data-enquiry]").forEach(function (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var d = new FormData(form);
+        var lines = [
+          "*New enquiry from website*",
+          "Name: " + (d.get("name") || ""),
+          "Mobile: " + (d.get("phone") || ""),
+          "Company: " + (d.get("company") || "-"),
+          "City: " + (d.get("city") || "-"),
+          "Looking for: " + (d.get("service") || "-"),
+          "Amount: " + (d.get("amount") || "-"),
+          "Message: " + (d.get("message") || "-")
+        ];
+        var url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(lines.join("\n"));
+        window.open(url, "_blank");
+        document.getElementById("close-popup").checked = true;
+        form.reset();
+      });
+    });
+  </script>
+</body>
+</html>
